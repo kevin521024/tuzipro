@@ -8,4 +8,5 @@ class DhyController < ActionController::Base
   def dhy
     render :text => session
   end
+
 end
