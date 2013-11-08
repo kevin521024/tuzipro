@@ -1,0 +1,21 @@
+defaults: &defaults
+  adapter: mysql2
+  encoding: utf8
+  pool: 20
+  reconnect: false
+  host: localhost
+  username: root
+  password: '654321'
+  #port: 3307
+
+development: &DEV
+  <<: *defaults
+  database: tuzi
+
+test: &TEST
+  <<: *defaults
+  database: tuzi
+
+production: &PRD
+  <<: *defaults
+  database: tuzi
